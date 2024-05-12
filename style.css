@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .container {
+    min-height: 100vh;
+    background-color: #e3e1e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .heading {
+    max-width: 80%;
+    padding: 1rem;
+    border: 2px solid rgb(31, 0, 0);
+    border-radius: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    box-shadow: 4px 4px 10px black;
+  }
+  
+
+  .box {
+    height: 10vmax;
+    width: 30vmax;
+    font-size: 1.5vmax;
+
+    max-width: 90%;
+    max-height: 60vmin;
+    margin-top: 2rem;
+    border: 10px solid;
+    border-radius: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .buttons {
+    max-width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn1,
+  .btn2 {
+    color: #44444C;
+    background-color: white;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1rem;
+    border-radius: 30rem;
+    box-shadow: 3px 3px 6px black;
+    margin: 0.5rem;
+  }
+  
+  .btn1:hover,
+  .btn2:hover {
+    background-color: #44444c;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  
+  .btn1:active,
+  .btn2:active {
+    transform: scale(0.8);
+    transition: transform 0.5s;
+  }
+  
+
+  .boxtext {
+    font-size: 6vmin;
+  }
+  
+
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1rem;
+    }
+  
+    .box {
+      max-height: 40vmin;
+    }
+  
+    .boxtext {
+      font-size: 5vmin;
+    }
+  
+    .btn1,
+    .btn2 {
+      width: 8rem;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 0.8rem;
+    }
+  
+    .box {
+      max-height: 30vmin;
+    }
+  
+    .boxtext {
+      font-size: 4vmin;
+    }
+  
+    .btn1,
+    .btn2 {
+      width: 6rem;
+      font-size: 0.6rem;
+    }
+  }
